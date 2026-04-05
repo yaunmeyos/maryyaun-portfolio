@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import './App.css';
-import profileImg from './assets/m.jpg';
+
+// Import assets
+import profileImg from './assets/mery.jpeg';
 import certImg from './assets/NC2.png';
 import systemImg from './assets/system.png';
 import awesomeImg from './assets/Awesome.png';
@@ -8,12 +10,14 @@ import techImg from './assets/tech.png';
 import urbanImg from './assets/urba.png';
 import datadynastyImg from './assets/Screenshot 2026-04-03 123711.png';
 import javaVideo from './assets/java.mp4';
+
 function App() {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
+  
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -30,6 +34,7 @@ function App() {
     });
     return () => observer.disconnect();
   }, []);
+  
   const scrollToSection = (sectionId) => {
     const refs = { home: homeRef, about: aboutRef, skills: skillsRef, projects: projectsRef, contact: contactRef };
     refs[sectionId]?.current?.scrollIntoView({ behavior: 'smooth' });
@@ -38,11 +43,13 @@ function App() {
   const scrollToProjects = () => {
     projectsRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
+  
   const handleSubmit = (event) => {
     event.preventDefault();
     alert("Thank you for your message! I'll get back to you soon.");
     event.target.reset();
   };
+  
   return (
     <div className="App">
       <nav className="navbar">
@@ -56,6 +63,7 @@ function App() {
           </ul>
         </div>
       </nav>
+      
       <section id="home" className="hero" ref={homeRef}>
         <div className="hero-content">
           <div className="hero-text">
@@ -68,6 +76,7 @@ function App() {
           </div>
         </div>
       </section>
+      
       {/* About Section */}
       <section id="about" className="about" ref={aboutRef}>
         <h2>About Me</h2>
@@ -89,6 +98,7 @@ function App() {
           </div>
         </div>
       </section>
+      
       <section id="skills" className="skills" ref={skillsRef}>
         <h2>Skills</h2>
         <div className="skills-grid">
@@ -169,6 +179,7 @@ function App() {
           </div>
         </div>
       </section>
+      
       <section id="projects" className="projects" ref={projectsRef}>
         <h2>Projects</h2>
         <div className="projects-grid">
@@ -263,6 +274,7 @@ function App() {
           </div>
         </div>
       </section>
+      
       <section id="contact" className="contact" ref={contactRef}>
         <h2>Contacts</h2>
         <div className="contact-content">
@@ -293,10 +305,12 @@ function App() {
           </div>
         </div>
       </section>
+      
       <footer className="footer">
-        <p>© 2024 Mary Rose E. Ya-un - Portfolio</p>
+        <p>© 2026 Mary Rose E. Ya-un - Portfolio</p>
       </footer>
     </div>
   );
 }
+
 export default App;
