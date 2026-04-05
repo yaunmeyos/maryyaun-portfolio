@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './App.css';
+
+// Import assets
 import profileImg from './assets/mery.jpeg';
 import certImg from './assets/NC2.png';
 import systemImg from './assets/system.png';
