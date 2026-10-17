@@ -2,22 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 70px;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
   line-height: 1.6;
-  color: #e6e6e6;
-  background-color: #0d0a08;
+  color: #222;
+  background-color: #fafafa;
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+img,
+video {
+  display: block;
+  max-width: 100%;
 }
