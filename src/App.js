@@ -39,7 +39,7 @@ const icons = {
 const stats = [
   { value: '5', label: 'Projects', icon: icons.folder },
   { value: 'NC II', label: 'TESDA Certified', icon: icons.award },
-  { value: '2+', label: 'Years Coding', icon: icons.code },
+  { value: '3rd Year', label: 'BSIT Student', icon: icons.cap },
 ];
 
 const projects = [
