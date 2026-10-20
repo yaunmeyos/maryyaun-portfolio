@@ -8,10 +8,11 @@ html {
   scroll-padding-top: 70px;
 }
 body {
-  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   line-height: 1.6;
-  color: #222;
-  background-color: #f6f0fb;
+  color: #241a33;
+  background-color: #f3f3f5;
+  -webkit-font-smoothing: antialiased;
 }
 img,
 video {
