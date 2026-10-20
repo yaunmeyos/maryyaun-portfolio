@@ -136,6 +136,8 @@ function Section({ id, num, title, children }) {
 }
 
 function App() {
+  const [menuOpen, setMenuOpen] = React.useState(false);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -150,7 +152,16 @@ function App() {
       <nav className="navbar">
         <div className="nav-inner">
           <a href="#home" className="logo">Mary Rose Ya-un</a>
-          <ul className="nav-links">
+          <button
+            type="button"
+            className="menu-btn"
+            aria-label="Toggle menu"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((open) => !open)}
+          >
+            <Icon d={menuOpen ? <path d="M6 6l12 12M18 6 6 18" /> : <path d="M4 7h16M4 12h16M4 17h16" />} size={20} />
+          </button>
+          <ul className={`nav-links${menuOpen ? ' open' : ''}`} onClick={() => setMenuOpen(false)}>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
