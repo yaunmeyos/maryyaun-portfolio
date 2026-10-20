@@ -15,7 +15,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Navbar */
 .navbar {
   position: sticky;
   top: 0;
@@ -46,7 +45,6 @@ a:hover {
   text-decoration: none;
 }
 
-/* Hero */
 .hero {
   text-align: center;
   padding: 5rem 1.5rem 4rem;
@@ -86,7 +84,6 @@ a:hover {
   text-decoration: none;
 }
 
-/* Sections */
 main section {
   max-width: 900px;
   margin: 0 auto;
@@ -129,7 +126,6 @@ main h3 {
   font-size: 0.9rem;
 }
 
-/* Skills */
 .skill-group {
   margin-bottom: 1.5rem;
 }
@@ -170,7 +166,6 @@ main h3 {
   font-size: 0.85rem;
 }
 
-/* Projects */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -208,7 +203,6 @@ main h3 {
   font-weight: 500;
 }
 
-/* Contact */
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -249,7 +243,6 @@ main h3 {
   align-self: flex-start;
 }
 
-/* Footer */
 .footer {
   text-align: center;
   padding: 2rem;
@@ -258,7 +251,6 @@ main h3 {
   border-top: 1px solid var(--border);
 }
 
-/* Mobile */
 @media (max-width: 640px) {
   .navbar {
     flex-direction: column;
